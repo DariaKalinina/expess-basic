@@ -1,0 +1,26 @@
+{
+  "name": "expess-basic",
+  "version": "1.0.0",
+  "description": "Express js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DariaKalinina/expess-basic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DariaKalinina/expess-basic/issues"
+  },
+  "homepage": "https://github.com/DariaKalinina/expess-basic#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
