@@ -45,6 +45,28 @@ class Card {
     }))
   }
 
+  static async remove(id) {
+    const card = await Card.fetch();
+    const index = card.courses.findIndex(item => item.id === id);
+    const course = card.courses[index];
+    if (course.count !== 1) {
+      course.count--;
+      card.courses[index] = course;
+    } else {
+      card.courses.splice(index, 1);
+    }
+    card.price -= +course.price;
+    return new Promise(((resolve, reject) => {
+      fs.writeFile(p, JSON.stringify(card), err => {
+        if (err) {
+          reject(err)
+        } else {
+          resolve(card);
+        }
+      })
+    }))
+  }
+
 
 }
 
