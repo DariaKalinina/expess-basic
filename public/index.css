@@ -30,3 +30,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.editForm {
+    margin-bottom: 20px;
+}
